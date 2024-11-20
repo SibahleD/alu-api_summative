@@ -29,7 +29,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
 @font-face {
     font-family: 'Lemon';
     src: url('fonts/LEMONMILK-Bold.woff') format('woff'),
@@ -76,14 +75,13 @@
 --------------------------------------------------------------*/
 
   *{
-    margin: 0;
-    box-sizing: border-box;
+    margin:0;
     transition: all 0.5s;
   }
 
   body {
     color: var(--default-text-color);
-    background-image: linear-gradient(var(--primary-color-shadow),var(--primary-color-shadow)), url(images/homebackground.jpg);
+    background-image: linear-gradient(var(--primary-color-shadow),var(--primary-color-shadow)), url(images/error404.jpg);
     background-position: center;
     background-size: contain;
     font-family: var(--default-font);
@@ -120,7 +118,8 @@
 /* Header
   ============================= */
 
-.header {
+
+  .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -174,7 +173,7 @@
 }
   
 .nav-bar li {
-  margin: 0; 
+  margin: 0px; 
   flex-grow: 1;
   text-align: center;
   padding-bottom: 10px;
@@ -208,6 +207,7 @@
 }
 
 @media (max-width: 768px) {
+
   .nav-bar ul {
       flex-direction: column; 
       justify-content: center;
@@ -215,9 +215,9 @@
   }
 
   .nav-bar li {
-    margin: 5px;
-    padding-bottom: 10px;
-}
+      margin: 5px;
+      padding-bottom: 10px;
+  }
 
   .hamburger{
     display: block;
@@ -235,7 +235,7 @@
   
   .index-menu{
     position:fixed;
-    left:-100%;
+    left:-120%;
     top:70px;
     gap:0;
     flex-direction: column;
@@ -246,7 +246,7 @@
   }
 
   .index-item{
-    margin:16px 0;
+    margin:10px 0;
   }
 
   .index-menu.active{
@@ -259,29 +259,28 @@
 /* Main
   ============================= */
 
-.container1 {
+  .container1 {
     width: 100%;
     min-height: 100vh;
-    height: 300px;
-}
+  } 
 
 /* Intro Text
   ============================= */
 
-  .intro-text{
+  .error-main{
     display: contents;
     align-items: center;
     text-align: center;
   }
 
-  .intro-text h1{
+  .error-text h1{
     font-size: 50px;
     font-weight: bold;
     padding: 50px;
     padding-bottom: 40px;
   }
 
-  .intro-text p{
+  .error-text p{
     font-size: 30px;
     font-weight: lighter;
     padding: 10px;
@@ -291,89 +290,39 @@
     padding-bottom: 20px;
   }
 
-
-
-  @media (max-width: 768px) {
-    .intro-text h1{
-      padding: 2vh;
-      font-size: 4vh;
-    }
-    .intro-text p {
-      padding: 1vh;
-      font-size: 3vh;
-    }
+  .error-main{
+    padding: 70px;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
   }
-/* Search
+
+/* Home Button
   ============================= */
 
-.search-main{
-    padding: 70px;
-}
-
-.search-cont{
+.home-button{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
-    margin: 0px;
-}
-.search-bar{
-    width:100%;
-    max-width: 600px;
-    background: var(--primary-color-shadow);
-    display: flex;
-    align-items: center;
+    margin: 30px;
+    width: 170px;
+    background: var(--accent-color);
     border-radius: 60px;
     padding: 10px 20px;
     backdrop-filter: blur(4px) saturate(100%);
 }
 
-.search-bar input {
-    background: transparent;
-    flex: 1;
-    outline: none;
-    border: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: var(--default-text-color);
-}
-
-::placeholder{
-    color: var(--accent-color);
-}
-
-.search-bar button img{
-    width: 25px;
-}
-
-.search-bar button {
+.home-button button {
+  color: var(--primary-color-dark);
     border: 0;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background: var(--heading-color);
+    background: none;
     cursor: pointer;
 }
 
-.search-bar button:hover {
+.home-button:hover {
     background: var(--primary-color-light);  
 }
-
-@media (max-width: 768px) {
-  .search-bar{
-    max-width: 50vh;
-    padding: 0vh;
-  }
-
-  .search-bar button{
-    background: none;
-  }
-  .search-bar button img{
-    padding-right: 10px;
-}
-}
-
-
 
 /* Footer
   ============================= */

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NewScope | About</title>
+    <title>NewScope | Search</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="HomePage">
-<!-- Header -->
+      <!-- Header -->
       <header class="header">
         <div class="header-logo">
           <a href="#">New<span>Scope</span></a>
@@ -38,16 +38,30 @@
           </div>
         </nav>
       </header>
-<!-- Main -->
       <main>
         <section class="container1">
-          <div class="intro-text">
-            <h1>About this website</h1>
-            <p>Search from over 10,000 research papers, journal articles, and documented studies.</p>
-          </div>
+          <section class="search-main">
+            <div class="intro-text">
+              <h1>Discover the Story, Shape Your World</h1>
+              <p id="text1">
+                Search for the most recent and reliable news worldwide.
+              </p>
+              <p id="text2">Anything. Anywhere. Anytime.</p>
+            </div>
+            <div class="search-cont">
+              <form
+                action="https://www.google.com/search"
+                method="get"
+                class="search-bar"
+              >
+                <input type="text" placeholder="search anything" name="q" />
+                <button type="submit"><img src="images/search.png" /></button>
+              </form>
+            </div>
+          </section>
         </section>
       </main>
-<!-- Footer -->
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer-index">
           <ul>
@@ -79,7 +93,7 @@
         <div class="footer-bottom">
           <p>&copy; 2024 NewScope. All rights reserved.</p>
         </div>
-      </footer> 
+      </footer>
     </section>
     <script src="scripts.js"></script>
   </body>
