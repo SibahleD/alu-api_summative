@@ -1,0 +1,300 @@
+/* CONTENTS
+1. Global
+ - Animations
+2. Layout
+3. Sections
+ - HEADER
+ - MAIN
+ - FOOTER
+*/
+
+/*--------------------------------------------------------------
+# 1. Global
+--------------------------------------------------------------*/
+
+/* Global Fonts */
+
+@font-face {
+    font-family: 'Cabinet';
+    src: url('fonts/CabinetGrotesk-Extrabold.woff') format('woff'),
+         url('fonts/CabinetGrotesk-Extrabold.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/Futura-Light.woff') format('woff'),
+         url('fonts/Futura-Light.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+  }
+:root {
+    --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Cabinet", sans-serif;
+    --paragraph-font: "Poppins", sans-serif;
+    --alt-font: "Futura", sans-serif;
+  }
+
+/* Global Colors */
+:root {
+    --background-color: #131313;
+    --default-text-color: #ffffff;
+    --heading-color: #ffffff;
+    --heading-light-color: #bdbdbd;
+    --accent-color: #ffffff8e;
+    --accent-light-color: #ffffff81; /* For buttons and links*/
+    --surface-color: #888888;
+    --contrast-color: #030303;
+    --shadow-color: #1313132c;
+    --nav-color: #242424;
+  }
+
+:root {
+    scroll-behavior: smooth;
+}
+
+
+/*--------------------------------------------------------------
+# 2. Layout
+--------------------------------------------------------------*/
+
+  *{
+    margin:0;
+  }
+
+  body {
+    color: var(--default-text-color);
+    background-image: linear-gradient(rgba(15, 15, 15, 0.9),rgba(15, 15, 15, 0.9)), url(images/homebackground.jpg);
+    background-position: center;
+    background-size: contain;
+    font-family: var(--default-font);
+  }
+  
+  a {
+    color: var(--heading-color);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: var(--accent-light-color);
+    text-decoration: none;
+  }
+  
+  h1,
+  h2 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    
+  }
+  h2 {
+    color: var(--heading-light-color);
+  }
+  p {
+    font-family: var(--paragraph-font);
+  }
+
+/*--------------------------------------------------------------
+# 3. Sections
+--------------------------------------------------------------*/
+
+/* Header
+  ============================= */
+
+.header {
+    color: var(--default-color);
+    background-color: var(--contrast-color);
+    padding: 15px 0;
+    transition: all 0.5s;
+}
+
+.header-logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+}
+
+.header-index {
+    padding: 10px;
+    margin: 10px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-index ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+  
+.header-index li {
+    margin: 0 10px;
+}
+
+.header-index-alt *, .header-index-alt *::after, .header-index-alt *::before {
+    box-sizing: border-box;
+}
+
+/* Main
+  ============================= */
+
+.container1 {
+    width: 100%;
+    min-height: 100vh;
+    height: 300px;
+}
+
+/* Intro Text
+  ============================= */
+  .intro-text{
+    display: contents;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    padding: 50px;
+    padding-bottom: 40px;
+  }
+
+  .intro-text p{
+    font-size: 30px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+  }
+
+/* Search
+  ============================= */
+
+
+.search-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin: 0px;
+}
+.search-bar{
+    width:100%;
+    max-width: 600px;
+    background: var(--contrast-color);
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(100%);
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    outline: none;
+    border: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: var(--default-text-color);
+}
+
+::placeholder{
+    color: var(--accent-color);
+}
+
+.search-bar button img{
+    width: 25px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: var(--heading-color);
+    cursor: pointer;
+}
+
+
+
+
+
+/* Footer
+  ============================= */
+
+
+.footer {
+  background-color: #222;
+  color: #f4f4f4;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #00c4cc;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #f4f4f4;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00c4cc;
+}
+
+.footer-section p a {
+  color: #00c4cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section p a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  color: #aaa;
+}
