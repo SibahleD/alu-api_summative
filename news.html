@@ -3,39 +3,23 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NewScope | Main</title>
+    <title>NewScope</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <section class="HomePage">
-<!-- Header -->
+      <!-- Header -->
       <header class="header">
         <div class="header-logo">
           <a href="#">New<span>Scope</span></a>
         </div>
         <nav class="nav-bar">
-          <ul>
-            <li class="index-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="index-item">
-              <a href="404.html" class="nav-link">General</a>
-            </li>
-            <li class="index-item">
-              <a href="news.html" class="nav-link">Entertainment</a>
-            </li>
-            <li class="index-item">
-              <a href="news.html" class="nav-link">Health</a>
-            </li>
-            <li class="index-item">
-              <a href="news.html" class="nav-link">Technology</a>
-            </li>
-            <li class="index-item">
-              <a href="news.html" class="nav-link">Sports</a>
-            </li>
-            <li class="index-item">
-              <a href="search.html" class="nav-link">Search</a>
-            </li>
+          <ul class="index-menu">
+            <li class="index-item"><a href="#" class="nav-link active" data-category="home">Home</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="world">World</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="science">Science</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="technology">Technology</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="sports">Sports</a></li>
           </ul>
           <div class="hamburger">
             <span class="bar"></span>
@@ -44,54 +28,39 @@
           </div>
         </nav>
       </header>
-<!-- Main -->
       <main>
         <section class="container1">
-          <div class="intro-text">
-            <h1>News</h1>
-            <p>Search from over 10,000 research papers, journal articles, and documented studies.</p>
-          </div>
+          <section class="search-main">
+            <div class="intro-text">
+              <h1>Discover the Story, Shape Your World</h1>
+              <p id="text1">
+                Search for the most recent and reliable news worldwide.
+              </p>
+              <p id="text2">Anything. Anywhere. Anytime.</p>
+            </div>
+            <div class="search-cont">
+              <form id="search-form" class="search-bar">
+                <input type="text" id="search-input" placeholder="Search news..." />
+                <button type="submit"><img src="images/search.png"/></button>
+              </form>
+            </div>
+          </section>
         </section>
       </main>
-<!-- Footer -->
+      <!-- Footer -->
       <footer class="footer">
-        <div class="footer-index">
-          <ul>
-            <li class="footer-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="footer-item">
-              <a href="404.html" class="nav-link">General</a>
-            </li>
-            <li class="footer-item">
-              <a href="news.html" class="nav-link">Entertainment</a>
-            </li>
-            <li class="footer-item">
-              <a href="news.html" class="nav-link">Health</a>
-            </li>
-            <li class="footer-item">
-              <a href="news.html" class="nav-link">Technology</a>
-            </li>
-            <li class="footer-item">
-              <a href="news.html" class="nav-link">Sports</a>
-            </li>
-            <li class="footer-item">
-              <a href="search.html" class="nav-link">Search</a>
-            </li>
-          </ul>
-        </div>
         <div class="footer-section">
           <h4>About</h4>
-          <p>
-            To get the most reliable and up-to-date happenings around the world,
+          <p>To get the most reliable and up-to-date happenings around the world,
             rely on New<span>Scope</span> to provide the world's happenings.
           </p>
           <p>Anything. Anywhere. Anytime.</p>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2024 NewScope. All rights reserved.</p>
+          <p>News sourced from <span id="two">The New York Times</span> API</p>
+          <p>&copy; 2024 <span id="one">NewScope</span>. All rights reserved.</p>
         </div>
-      </footer> 
+      </footer>
     </section>
     <script src="scripts.js"></script>
   </body>

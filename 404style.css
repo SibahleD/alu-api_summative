@@ -36,6 +36,15 @@
     font-weight: 400;
     font-style: normal;
   }
+
+@font-face {
+  font-family: 'Engravers';
+  src: url('fonts/OPTIEngraversOldEnglish.woff') format('woff'),
+       url('fonts/OPTIEngraversOldEnglish.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  }
+
 :root {
     --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
       "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
@@ -118,11 +127,10 @@
 /* Header
   ============================= */
 
-
-  .header {
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     color: var(--primary-color);
     background-color: var(--background-color);
     padding: 10px 20px;
@@ -144,7 +152,7 @@
   color: var(--heading-color);
 }
 .header-logo a span {
-    color: var(--primary-color-light);
+  color: var(--primary-color-light);
 }
 
 .header-logo a:hover,
@@ -394,6 +402,13 @@
   text-align: center;
   padding-bottom: 10px;
   transition: all 0.5s;
+}
+
+#one {
+  font-family: Lemon, sans-serif;
+}
+#two {
+  font-family: engravers, sans-serif;
 }
 
 .footer-index li:hover {
