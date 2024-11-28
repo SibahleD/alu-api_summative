@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   
     // Run the script only on `news.html`
-    if (window.location.pathname.endsWith("news.html")) {
+    if (window.location.pathname.endsWith("index.html")) {
       // DOM Elements
       const mainContainer = document.querySelector("main"); // Main container for news articles
       const navLinks = document.querySelectorAll(".nav-bar .nav-link"); // Navigation links for categories
