@@ -165,104 +165,9 @@
   margin: 10px;
   margin-top: 0;
   display: flex;
-  justify-content: space-between; /* Ensures items spread out across the width */
+  justify-content: space-between;
 
 }
-
-.nav-bar ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-  padding-right: 40px;
-  width: 100%;
-}
-  
-.nav-bar li {
-  margin: 0px; 
-  flex-grow: 1;
-  text-align: center;
-  padding-bottom: 10px;
-  border-bottom: var(--primary-color);
-  border-bottom-style: solid;
-  border-width: 2px;
-  transition: all 0.5s;
-}
-
-.nav-bar li:hover {
-  border-bottom: var(--primary-color-shadow);
-}
-
-.nav-bar-alt *, .nav-bar-alt *::after, .nav-bar-alt *::before {
-    box-sizing: border-box;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width:25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--heading-color);
-}
-
-@media (max-width: 768px) {
-
-  .nav-bar ul {
-      flex-direction: column; 
-      justify-content: center;
-      align-items: center;
-  }
-
-  .nav-bar li {
-      margin: 5px;
-      padding-bottom: 10px;
-  }
-
-  .hamburger{
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2){
-    opacity: 0;
-  }
-  .hamburger.active .bar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
-  .index-menu{
-    position:fixed;
-    left:-120%;
-    top:70px;
-    gap:0;
-    flex-direction: column;
-    background-color: var(--background-color);
-    width:100%;
-    text-align: center;
-    transition:0.3s;
-  }
-
-  .index-item{
-    margin:10px 0;
-  }
-
-  .index-menu.active{
-    left:0;
-  }
-}
-
-
 
 /* Main
   ============================= */
@@ -381,40 +286,10 @@
   color: var(--primary-color-light);
 }
 
-.footer-index {
-  padding: 10px;
-  margin: 10px;
-  margin-top: 0;
-  display: flex;
-}
-
-.footer-index ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-  
-.footer-index li {
-  margin: 0;
-  flex-grow: 1;
-  text-align: center;
-  padding-bottom: 10px;
-  transition: all 0.5s;
-}
 
 #one {
   font-family: Lemon, sans-serif;
 }
 #two {
   font-family: engravers, sans-serif;
-}
-
-.footer-index li:hover {
-  border-bottom: var(--primary-color-shadow);
-}
-
-.footer-index-alt *, .footer-index-alt *::after, .footer-index-alt *::before {
-    box-sizing: border-box;
 }
