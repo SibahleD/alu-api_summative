@@ -25,21 +25,20 @@ Ensure you have:
 
 1. Clone the Repository
 Clone the repository to your local machine using the following command:
-   _________________________________________
-  |  git clone <repository-url>             |
-  |_________________________________________|
+
+     git clone <repository-url>
+
 
 2. Navigate to the Project Directory      
-   _________________________________________
-  |  cd alu-api-summative         |
-  |_________________________________________|
+
+    cd alu-api-summative
+
 
 3. Add Your API Key
 The application uses the New York Times API to fetch news data.
 Replace the apiKey value in both scripts/api.js and scripts/search.js with your own API key:
-   __________________________________________
-  |  const apiKey = "your-nyt-api-key-here"; |
-  |__________________________________________|
+
+    const apiKey = "your-nyt-api-key-here";
 
 You can obtain an API key by signing up at the New York Times Developer Portal.
 
@@ -53,37 +52,27 @@ Follow these steps to run the NewScope application on your own seerver:
 
 1. Clone the Repository
 Clone the repository to the server using the following command:
-   _________________________________________
-  |                                         |
-  |       git clone <repository-url>        |
-  |_________________________________________|
+
+        git clone <repository-url>
 
 2. Navigate to the Project Directory      
-   _________________________________________
-  |                                         |
-  |      cd <repository-folder-name>        |
-  |_________________________________________|
+
+        cd <repository-folder-name>
 
 3. Edit configuration files (NginX Servers)
 Edit the nginx onfigurion file found in /etc/nginx/sites-available/default, to direct the system to the index.html file.
-
-   __________________________________________
-  |                                          |
-  |   server {                               |
-  |      listen 80 default_server;           |
-  |      listen [::]:80 default_server;      |
-  |      root /var/www/html;                 |
-  |          index index.html;               |
-  |   }                                      |
-  |__________________________________________|
+                                            
+     server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+        root /var/www/html;
+            index index.html;
+     }
 
 4. Restart Nginx
 Restart nginx for changes to configurations to take effect without stopping the server
 
-   ___________________________________________
-  |                                           |
-  |       sudo system nginx restart           |
-  |___________________________________________|
+         sudo system nginx restart
 
 Load up the website using either the IP address to start searching!
 
