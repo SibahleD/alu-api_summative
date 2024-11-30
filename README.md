@@ -78,19 +78,19 @@ Load up the website using either the IP address to start searching!
 
 ## File Structure
 
-├── index.html       # Home page of the application
-├── search.html      # Search page for querying specific news topics
-├── 404.html         # Custom 404 error page
+├── index.html         Home page of the application
+├── search.html        Search page for querying specific news topics
+├── 404.html           Custom 404 error page
 ├── styles/
-│   ├── styles.css   # Main CSS file for the home page
-│   ├── search.css   # CSS file for the search page
-│   ├── 404style.css # CSS file for the 404 error page
+│   ├── styles.css     Main CSS file for the home page
+│   ├── search.css     CSS file for the search page
+│   ├── 404style.css   CSS file for the 404 error page
 ├── scripts/
-│   ├── api.js       # Handles fetching and displaying news articles by category
-│   ├── search.js    # Handles search functionality and displaying results
-│   ├── hamburger.js # Script for responsive navigation
-├── images/          # Contains images used in the application
-└── README.md        # Documentation file (this file)
+│   ├── api.js         Handles fetching and displaying news articles by category
+│   ├── search.js      Handles search functionality and displaying results
+│   ├── hamburger.js   Script for responsive navigation
+├── images/            Contains images used in the application
+└── README.md          Documentation file (this file)
 
 
 ## API Used
