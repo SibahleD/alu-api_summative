@@ -1,5 +1,5 @@
 # Temporary files
 *.tmp
 *.swp
-# Dependency directories (remove the comment below to include it)
+# Dependency directories
 .git/ 
