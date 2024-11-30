@@ -115,20 +115,6 @@ Top Stories API: Fetches the latest articles by category.
 Article Search API: Allows users to search for news articles by keywords.
 [API Documentation](https://developer.nytimes.com/docs/articlesearch-product/1/overview)
 
-## Screenshots
-
-1. Home Page
-The home page provides a dynamic display of the latest news articles by category.
-
-
-2. Search Page
-The search page allows users to query specific topics.
-
-
-3. 404 Page
-The custom 404 page provides a friendly message for invalid routes.
-
-
 ## Challenges Faced
 - Finding and maintaining a clear theme throughout the website files. Methods such as using var() to have clear color pallete for the website were helpful
 - Finding a neat and concise way of sorting files or this application. Multiple methods were implemente including separating js scripts and css code for easier troubleshooting, and storing similar files in folders (images in /images, js scripts in /scripts, etc.)
