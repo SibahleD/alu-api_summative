@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewScope | Search</title>
+    <link rel="stylesheet" href="styles/search.css" />
+  </head>
+  <body>
+    <section class="HomePage">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-logo">
+          <a href="#">New<span>Scope</span></a>
+        </div>
+        <nav class="nav-bar">
+          <ul class="index-menu">
+            <li class="index-item"><a href="#" class="nav-link" data-category="home">Home</a></li>
+            <!-- <li class="index-item"><a href="#" class="nav-link" data-category="world">World</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="science">Science</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="technology">Tech</a></li>
+            <li class="index-item"><a href="#" class="nav-link" data-category="sports">Sports</a></li> -->
+            <li class="index-item"><a href="search.html" class="nav-link active" data-category="search">Search</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div id="header-container"></div>
+        <section class="container1">
+          <section class="search-main">
+            <div class="intro-text">
+              <h1>Discover the Story, Shape Your World</h1>
+              <p id="text1">
+                Search for the most recent and reliable news worldwide.
+              </p>
+              <p id="text2">Anything. Anywhere. Anytime.</p>
+            </div>
+            <div class="search-cont">
+              <form id="search-form" class="search-bar">
+                <input type="text" id="search-input" placeholder="Search news..." />
+                <button type="submit"><img src="images/search.png"/></button>
+              </form>
+            </div>
+          </section>
+        </section>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-section">
+          <h4>About</h4>
+          <p>To get the most reliable and up-to-date happenings around the world,
+            rely on New<span>Scope</span> to provide the world's happenings.
+          </p>
+          <p>Anything. Anywhere. Anytime.</p>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://developer.nytimes.com/" target="_blank"><img class="nyt-api" src="images/nytapi.png"></a>
+            <p>&copy; 2024 <span id="one">NewScope</span>. All rights reserved.</p>
+        </div>
+      </footer>
+    </section>
+    <script src="scripts/search.js"></script>
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>
